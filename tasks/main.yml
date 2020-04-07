@@ -5,13 +5,6 @@
     src: files/etc/apt/sources.list
     dest: /etc/apt/sources.list
 
-- name: update apt cache and upgrade packages
-  apt:
-    update_cache: yes
-    upgrade: full
-    autoclean: yes
-    autoremove: yes
-
 - name: install packages
   package:
     name: "{{ item }}"
