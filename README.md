@@ -18,8 +18,9 @@ basicsettings_packages:
 ```
 ## package sources
 ```
-# /etc/apt/sources.list
-deb http://ftp.de.debian.org/debian/ stable main non-free
-deb http://ftp.de.debian.org/debian/ stable-updates main non-free
-deb http://security.debian.org/ stable/updates main
+# list with sources written to /etc/apt/sources.list
+basicsettings_repositories:
+  - 'deb http://ftp.ch.debian.org/debian/ stable main non-free'
+  - 'deb http://ftp.ch.debian.org/debian/ stable-updates main non-free'
+  - 'deb http://security.debian.org/ stable/updates main'
 ```
